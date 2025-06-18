@@ -44,7 +44,7 @@ const Navigation = () => {
     <nav 
       className={`fixed z-50 select-none transition-all duration-300 ${
         activeSection === 'hero' 
-          ? 'left-1/2 transform -translate-x-1/2 top-[calc(50vh+280px)]' // Sous l'image sur la première page
+          ? 'left-1/2 transform -translate-x-1/2 top-[calc(50vh+200px)]' // Entre la photo et le texte
           : 'left-8 top-8' // Top-left sur les autres sections
       }`}
     >
