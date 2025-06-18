@@ -12,21 +12,21 @@ const GallerySection = () => {
       title: "Attention is all you need implementation",
       description: "A visual exploration of transformer attention patterns, revealing the hidden pathways of machine understanding. This piece transforms mathematical abstractions into intuitive visual narratives.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
-      tags: ["Attention Mechanisms", "Visualization", "Deep Learning"]
+      tags: ["research"]
     },
     {
       id: 2,
       title: "IceBreaker",
       description: "A social party game that creates a personalized, one-of-a-kind experience every time it's launched — using the power of large language models to generate infinite game variations and dynamic NPC personalities.",
       image: "/lovable-uploads/c84c09a9-5d91-432f-8d78-e622f1430696.png",
-      tags: ["Logic Systems", "Architecture", "AI Reasoning"]
+      tags: ["entrepreneurship"]
     },
     {
       id: 3,
       title: "LLM for fewshot",
       description: "Documentation of unexpected intelligence arising from simple rules. This ongoing series examines the moments when systems transcend their original programming.",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
-      tags: ["Emergence", "Complex Systems", "Behavioral Analysis"]
+      tags: ["research"]
     }
   ];
 
