@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('hero');
-  const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const navItems = [
     { id: 'hero', label: 'Introduction' },
@@ -12,15 +11,6 @@ const Navigation = () => {
     { id: 'about', label: 'Research' },
     { id: 'contact', label: 'Connect' }
   ];
-
-  useEffect(() => {
-    // Set initial position based on active section
-    const initialPosition = activeSection === 'hero' 
-      ? { x: window.innerWidth / 2 - 200, y: window.innerHeight / 2 + 100 } // Center horizontally, under the picture
-      : { x: 20, y: 20 }; // Top-left for other sections
-    
-    setPosition(initialPosition);
-  }, [activeSection]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -52,11 +42,11 @@ const Navigation = () => {
 
   return (
     <nav 
-      className="fixed z-50 select-none"
-      style={{ 
-        left: `${position.x}px`, 
-        top: `${position.y}px`
-      }}
+      className={`fixed z-50 select-none transition-all duration-300 ${
+        activeSection === 'hero' 
+          ? 'left-1/2 transform -translate-x-1/2 top-[calc(50vh+280px)]' // Sous l'image sur la première page
+          : 'left-8 top-8' // Top-left sur les autres sections
+      }`}
     >
       <div className="bg-porcelain/90 backdrop-blur-sm border border-charcoal/10 rounded-full px-6 py-3 shadow-lg transition-all duration-300 hover:shadow-xl">
         <ul className="flex space-x-6">
