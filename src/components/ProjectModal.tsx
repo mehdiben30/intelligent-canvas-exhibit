@@ -38,7 +38,11 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
         };
       case 2:
         return {
-          details: "IceBreaker revolutionizes social gaming by leveraging large language models to create dynamic, personalized party experiences. Each game session generates unique scenarios, challenges, and character personalities based on the players present. The AI adapts to group dynamics, creating conversations starters and activities that bring people together in meaningful ways. No two games are ever the same, ensuring fresh entertainment for every gathering.",
+          details: "Convinced that large language models can enhance the everyday experiences we live through, I had the idea of using them to improve social interaction — helping people open up, connect more easily, and most importantly, create fun and meaningful moments.
+
+I’m developing this project with a team of four, including an engineer from CentraleSupélec, an AI scientist from ETH Zurich, and a designer.
+
+We plan to launch by the end of 2025. Below is a demo of the first version of our MVP — already far from where we are today, but it offers a glimpse into what we’re building.",
           technologies: ["React", "Node.js", "OpenAI API", "Socket.io", "MongoDB"],
           link: "https://icebreaker-game.com"
         };
