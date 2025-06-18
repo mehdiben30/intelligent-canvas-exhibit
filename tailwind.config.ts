@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -120,6 +119,50 @@ export default {
 					'100%': {
 						transform: 'translateY(-50px)'
 					}
+				},
+				'nav-entrance': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(-30px) scale(0.8)'
+					},
+					'60%': {
+						opacity: '0.8',
+						transform: 'translateY(5px) scale(1.05)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0) scale(1)'
+					}
+				},
+				'nav-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 20px rgba(214, 164, 164, 0.3)'
+					},
+					'50%': {
+						boxShadow: '0 0 30px rgba(214, 164, 164, 0.6)'
+					}
+				},
+				'button-preview': {
+					'0%': {
+						backgroundColor: 'transparent',
+						transform: 'scale(1)'
+					},
+					'30%': {
+						backgroundColor: 'rgba(214, 164, 164, 0.1)',
+						transform: 'scale(1.05)'
+					},
+					'100%': {
+						backgroundColor: 'transparent',
+						transform: 'scale(1)'
+					}
+				},
+				'nav-invite': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-2px)'
+					}
 				}
 			},
 			animation: {
@@ -127,7 +170,11 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.8s ease-out',
 				'float': 'float 6s ease-in-out infinite',
-				'parallax': 'parallax 1s ease-out'
+				'parallax': 'parallax 1s ease-out',
+				'nav-entrance': 'nav-entrance 1.2s cubic-bezier(0.34, 1.56, 0.64, 1)',
+				'nav-glow': 'nav-glow 3s ease-in-out infinite',
+				'nav-invite': 'nav-invite 2s ease-in-out infinite',
+				'button-preview': 'button-preview 0.8s ease-in-out'
 			}
 		}
 	},
