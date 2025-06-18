@@ -1,12 +1,17 @@
-import React from 'react';
+
+import React, { useState } from 'react';
+import ProjectModal from './ProjectModal';
 
 const GallerySection = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const projects = [
     {
       id: 1,
       title: "Attention is all you need implementation",
       description: "A visual exploration of transformer attention patterns, revealing the hidden pathways of machine understanding. This piece transforms mathematical abstractions into intuitive visual narratives.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop", // circuit board
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
       tags: ["Attention Mechanisms", "Visualization", "Deep Learning"]
     },
     {
@@ -20,10 +25,20 @@ const GallerySection = () => {
       id: 3,
       title: "LLM for fewshot",
       description: "Documentation of unexpected intelligence arising from simple rules. This ongoing series examines the moments when systems transcend their original programming.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop", // colorful code
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
       tags: ["Emergence", "Complex Systems", "Behavioral Analysis"]
     }
   ];
+
+  const handleExploreClick = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <section className="min-h-screen py-20 px-6">
@@ -81,7 +96,10 @@ const GallerySection = () => {
                   {project.description}
                 </p>
 
-                <button className="group inline-flex items-center space-x-2 text-charcoal hover:text-dusty transition-colors duration-300">
+                <button 
+                  onClick={() => handleExploreClick(project)}
+                  className="group inline-flex items-center space-x-2 text-charcoal hover:text-dusty transition-colors duration-300"
+                >
                   <span className="font-medium">Explore piece</span>
                   <div className="w-6 h-px bg-current transition-all duration-300 group-hover:w-8"></div>
                   <div className="w-0 h-0 border-l-4 border-l-current border-y-2 border-y-transparent"></div>
@@ -91,6 +109,12 @@ const GallerySection = () => {
           ))}
         </div>
       </div>
+
+      <ProjectModal 
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </section>
   );
 };
