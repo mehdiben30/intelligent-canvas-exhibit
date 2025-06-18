@@ -18,8 +18,8 @@ const Navigation = () => {
   useEffect(() => {
     // Set initial position based on active section
     const initialPosition = activeSection === 'hero' 
-      ? { x: 20, y: 20 } // Top-left for hero section
-      : { x: window.innerWidth - 400, y: 32 }; // Top-right for other sections
+      ? { x: window.innerWidth / 2 - 200, y: window.innerHeight / 2 + 100 } // Center horizontally, under the picture
+      : { x: 20, y: 20 }; // Top-left for other sections
     
     setPosition(initialPosition);
   }, [activeSection]);
