@@ -2,6 +2,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import HeroSection from '../components/HeroSection';
+import AboutMeSection from '../components/AboutMeSection';
 import GallerySection from '../components/GallerySection';
 import AboutSection from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
@@ -13,6 +14,10 @@ const Index = () => {
       
       <div id="hero">
         <HeroSection />
+      </div>
+      
+      <div id="about-me">
+        <AboutMeSection />
       </div>
       
       <div id="gallery">
