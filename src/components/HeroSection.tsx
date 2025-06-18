@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto">
           {/* Enhanced title animation */}
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <h1 className="exhibition-title mb-12 relative">
+            <h1 className="font-playfair text-4xl md:text-6xl font-semibold text-charcoal leading-tight mb-12 relative">
               <span className="inline-block animate-fade-in" style={{ animationDelay: '0.4s' }}>
                 Mehdi Ben Barka
               </span>
