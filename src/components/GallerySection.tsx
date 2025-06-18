@@ -5,21 +5,21 @@ const GallerySection = () => {
   const projects = [
     {
       id: 1,
-      title: "Neural Attention Landscapes",
+      title: "Attention is all you need implementation",
       description: "A visual exploration of transformer attention patterns, revealing the hidden pathways of machine understanding. This piece transforms mathematical abstractions into intuitive visual narratives.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop", // circuit board
       tags: ["Attention Mechanisms", "Visualization", "Deep Learning"]
     },
     {
       id: 2,
-      title: "Reasoning Architectures",
+      title: "IceBreaker",
       description: "An investigation into how artificial minds structure logical thought. Each visualization captures the emergent patterns of computational reasoning, made visible through careful observation.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop", // code monitor
       tags: ["Logic Systems", "Architecture", "AI Reasoning"]
     },
     {
       id: 3,
-      title: "Emergent Behaviors Study",
+      title: "LLM for fewshot",
       description: "Documentation of unexpected intelligence arising from simple rules. This ongoing series examines the moments when systems transcend their original programming.",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop", // colorful code
       tags: ["Emergence", "Complex Systems", "Behavioral Analysis"]
