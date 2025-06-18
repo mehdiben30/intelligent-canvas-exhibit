@@ -38,13 +38,13 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
         };
       case 2:
         return {
-          details: `Convinced that large language models can enhance the everyday experiences we live through, I had the idea of using them to improve social interaction — helping people open up, connect more easily, and most importantly, create fun and meaningful moments.
+          details: `Driven by the belief that large language models can meaningfully enhance everyday experiences, I initiated this project to explore how AI could enrich social interactions — encouraging people to express themselves more openly, forge authentic connections, and share memorable, engaging moments.
 
-I'm developing this project with a team of four, including an engineer from CentraleSupélec, an AI scientist from ETH Zurich, and a designer.
+The project is being developed in collaboration with a multidisciplinary team of four, including an engineer from CentraleSupélec, an AI scientist from ETH Zurich, and a designer.
 
-We plan to launch by the end of 2025. Below is a demo of the first version of our MVP — already far from where we are today, but it offers a glimpse into what we're building.`,
-          technologies: ["React", "Node.js", "OpenAI API", "Socket.io", "MongoDB"],
-          link: "https://icebreaker-game.com"
+We aim to launch by the end of 2025. The demo below showcases an early version of our MVP — significantly evolved since, but offering a preview of the direction we’re pursuing.
+
+`,
         };
       case 3:
         return {
