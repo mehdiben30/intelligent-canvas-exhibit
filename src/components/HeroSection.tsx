@@ -1,3 +1,4 @@
+
 import React from 'react';
 import HeroNavigation from './HeroNavigation';
 
@@ -49,17 +50,13 @@ const HeroSection = () => {
             <HeroNavigation />
           </div>
           
-          {/* Enhanced description with staggered animation */}
-          <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          {/* Simplified description without problematic animation */}
+          <div className="space-y-6">
             <p className="curator-note text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-              <span className="inline-block animate-fade-in" style={{ animationDelay: '1s' }}>
-                Master student @ ML for DataScience, U-Paris Citée
-              </span>
+              Master student @ ML for DataScience, U-Paris Citée
             </p>
             <p className="curator-note text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-              <span className="inline-block animate-fade-in" style={{ animationDelay: '1.2s' }}>
-                AI research Intern @ Emobot
-              </span>
+              AI research Intern @ Emobot
             </p>
           </div>
 
