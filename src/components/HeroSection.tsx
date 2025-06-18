@@ -19,7 +19,7 @@ const HeroSection = () => {
             
           </h1>
           <p className="curator-note text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
-            AI student @ Master ML for DataScience U-ParisCitée <br/>
+            Master student @ ML for DataScience, U-Paris Citée <br/>
             AI research Intern @ Emobot
           </p>
         </div>
