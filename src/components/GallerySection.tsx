@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import ProjectModal from './ProjectModal';
 
@@ -11,7 +10,7 @@ const GallerySection = () => {
       id: 1,
       title: "Understanding Transformers through Implementation",
       description: "A visual exploration of transformer attention patterns, revealing the hidden pathways of machine understanding. This piece transforms mathematical abstractions into intuitive visual narratives.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+      image: "/lovable-uploads/5d12bbc2-d716-4ce7-8948-032105f57a31.png",
       tags: ["research oriented project"]
     },
     {
