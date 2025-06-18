@@ -16,8 +16,17 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="exhibition-title mb-8">
             Mehdi Ben Barka<br />
-            
           </h1>
+          
+          {/* Profile Image */}
+          <div className="mb-8 flex justify-center">
+            <img 
+              src="/lovable-uploads/ebc861f3-16bc-4f14-ba00-57394ebf5d39.png" 
+              alt="Mehdi Ben Barka"
+              className="w-64 h-80 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+          
           <p className="curator-note text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
             Master student @ ML for DataScience, U-Paris Citée <br/>
             AI research Intern @ Emobot
