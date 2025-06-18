@@ -71,15 +71,6 @@ We aim to launch by the end of 2025. The demo below showcases an early version o
         </DialogHeader>
         
         <div className="space-y-6">
-          {/* Project Image */}
-          <div className="w-full h-64 rounded-lg overflow-hidden">
-            <img 
-              src={project.image} 
-              alt={project.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
-
           {/* Tags */}
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
