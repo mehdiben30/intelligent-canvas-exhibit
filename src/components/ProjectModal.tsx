@@ -32,7 +32,11 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
     switch (projectId) {
       case 1:
         return {
-          details: 'The goal of this project was to gain a deep, hands-on understanding of Transformer architectures and the underlying code that powers them. To do so, I implemented and extended the model presented in Andrej Karpathy\'s video "Let\'s Build GPT: From Scratch, in Code, Spelled Out." I then improved the implementation using several state-of-the-art techniques in large language model training. The result achieved comparable performance while reducing training time by 68%, all on a significantly smaller GPU (T4 vs. A100). You can find the complete code in the GitHub repository as well as a concise report outlining the methodology, improvements, and results of the project.',
+          details: `The goal of this project was to gain a deep, hands-on understanding of Transformer architectures and the underlying code that powers them. To do so, I implemented and extended the model presented in Andrej Karpathy's video "Let's Build GPT: From Scratch, in Code, Spelled Out." I then improved the implementation using several state-of-the-art techniques in large language model training.
+
+The result achieved comparable performance while reducing training time by 68%, all on a significantly smaller GPU (T4 vs. A100).
+
+You can find the complete code in the GitHub repository as well as a concise report outlining the methodology, improvements, and results of the project.`,
           technologies: ["Python", "PyTorch", "Transformers"],
           link: "https://github.com/example/attention-viz"
         };
