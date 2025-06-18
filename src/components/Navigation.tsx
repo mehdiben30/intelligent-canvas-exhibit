@@ -44,9 +44,10 @@ const Navigation = () => {
     <nav 
       className={`fixed z-50 select-none transition-all duration-300 ${
         activeSection === 'hero' 
-          ? 'left-1/2 transform -translate-x-1/2 top-[60vh]' // Position fixe sous la photo
+          ? 'left-1/2 transform -translate-x-1/2' // Centered horizontally
           : 'left-8 top-8' // Top-left sur les autres sections
       }`}
+      style={activeSection === 'hero' ? { top: 'calc(50vh + 240px)' } : {}}
     >
       <div className="bg-porcelain/90 backdrop-blur-sm border border-charcoal/10 rounded-full px-6 py-3 shadow-lg">
         <ul className="flex space-x-6">
