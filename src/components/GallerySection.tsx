@@ -13,7 +13,8 @@ const GallerySection = () => {
     {
       id: 2,
       title: "IceBreaker",
-      description: "An investigation into how artificial minds structure logical thought. Each visualization captures the emergent patterns of computational reasoning, made visible through careful observation.",
+      description: "A social party game that creates a personalized, one-of-a-kind experience every time it’s launched — using the power of large language models to generate infinite game variations and dynamic NPC personalities. 
+",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop", // code monitor
       tags: ["Logic Systems", "Architecture", "AI Reasoning"]
     },
