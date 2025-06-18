@@ -19,9 +19,8 @@ const HeroSection = () => {
             Portfolio's
           </h1>
           <p className="curator-note text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
-            My work explores the interface between reasoning systems 
-            and human understanding, creating bridges where intelligence 
-            meets intuition.
+            AI student @ Master ML for Data-Science U-ParisCitée
+            Ai research Intern @ Emobot
           </p>
         </div>
       </div>
