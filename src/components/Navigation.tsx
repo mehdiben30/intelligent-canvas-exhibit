@@ -44,11 +44,11 @@ const Navigation = () => {
     <nav 
       className={`fixed z-50 select-none transition-all duration-300 ${
         activeSection === 'hero' 
-          ? 'left-1/2 transform -translate-x-1/2 top-[calc(50vh+200px)]' // Entre la photo et le texte
+          ? 'left-1/2 transform -translate-x-1/2 top-[60vh]' // Position fixe sous la photo
           : 'left-8 top-8' // Top-left sur les autres sections
       }`}
     >
-      <div className="bg-porcelain/90 backdrop-blur-sm border border-charcoal/10 rounded-full px-6 py-3 shadow-lg transition-all duration-300 hover:shadow-xl">
+      <div className="bg-porcelain/90 backdrop-blur-sm border border-charcoal/10 rounded-full px-6 py-3 shadow-lg">
         <ul className="flex space-x-6">
           {navItems.map((item) => (
             <li key={item.id}>
