@@ -9,7 +9,7 @@ const GallerySection = () => {
   const projects = [
     {
       id: 1,
-      title: "Attention is all you need implementation",
+      title: "Understanding Transformers through Implementation",
       description: "A visual exploration of transformer attention patterns, revealing the hidden pathways of machine understanding. This piece transforms mathematical abstractions into intuitive visual narratives.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
       tags: ["research"]
