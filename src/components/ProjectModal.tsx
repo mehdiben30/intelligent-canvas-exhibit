@@ -32,8 +32,12 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
     switch (projectId) {
       case 1:
         return {
-          details: "This implementation explores the revolutionary 'Attention is All You Need' paper, visualizing how transformer models process and understand language. The project includes interactive demonstrations of self-attention mechanisms, multi-head attention patterns, and positional encoding visualizations. Through careful analysis of attention weights, we reveal the hidden relationships that models discover in text, making the abstract mathematical concepts tangible and intuitive.",
-          technologies: ["Python", "PyTorch", "Transformers", "D3.js", "React"],
+          details: 'The goal of this project was to gain a deep, hands-on understanding of Transformer architectures and the underlying code that powers them. To do so, I implemented and extended the model presented in Andrej Karpathy’s video “Let’s Build GPT: From Scratch, in Code, Spelled Out.” I then improved the implementation using several state-of-the-art techniques in large language model training. The result achieved comparable performance while reducing training time by 68%, all on a significantly smaller GPU (T4 vs. A100). You can find the complete code in the GitHub repository as well as a concise report outlining the methodology, improvements, and results of the project.
+            
+          '
+            
+
+          technologies: ["Python", "PyTorch", "Transformers"],
           link: "https://github.com/example/attention-viz"
         };
       case 2:
