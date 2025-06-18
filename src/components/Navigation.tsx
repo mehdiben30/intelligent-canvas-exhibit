@@ -15,28 +15,40 @@ const Navigation = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = navItems.map(item => document.getElementById(item.id));
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
+      const scrollPosition = window.scrollY + 200; // Adjusted offset for better detection
 
-      sections.forEach((section, index) => {
-        if (section) {
-          const sectionTop = section.offsetTop;
-          const sectionBottom = sectionTop + section.offsetHeight;
-          
-          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            setActiveSection(navItems[index].id);
-          }
+      // Find the section that's currently in view
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section && scrollPosition >= section.offsetTop) {
+          setActiveSection(navItems[i].id);
+          break;
         }
-      });
+      }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Throttle scroll events for better performance
+    let ticking = false;
+    const throttledScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', throttledScroll);
+    handleScroll(); // Initial call
+    
+    return () => window.removeEventListener('scroll', throttledScroll);
   }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
@@ -46,17 +58,17 @@ const Navigation = () => {
   }
 
   return (
-    <nav className="fixed z-50 select-none transition-all duration-300 left-8 top-8">
-      <div className="bg-porcelain/90 backdrop-blur-sm border border-charcoal/10 rounded-full px-6 py-3 shadow-lg">
+    <nav className="fixed z-50 select-none left-8 top-8">
+      <div className="bg-porcelain/95 backdrop-blur-md border border-charcoal/20 rounded-full px-6 py-3 shadow-xl">
         <ul className="flex space-x-6">
           {navItems.map((item) => (
             <li key={item.id}>
               <button
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm transition-all duration-300 ${
+                className={`text-sm font-medium transition-all duration-200 ${
                   activeSection === item.id
-                    ? 'text-dusty font-medium'
-                    : 'text-charcoal/60 hover:text-charcoal'
+                    ? 'text-dusty'
+                    : 'text-charcoal/70 hover:text-charcoal'
                 }`}
               >
                 {item.label}
