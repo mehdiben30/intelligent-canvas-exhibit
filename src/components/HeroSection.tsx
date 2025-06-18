@@ -61,7 +61,15 @@ const HeroSection = () => {
           </div>
 
           {/* Call to action with subtle animation */}
-          
+          <div className="mt-16 animate-fade-in" style={{ animationDelay: '1.4s' }}>
+            <div className="inline-flex items-center space-x-3 text-dusty/70 hover:text-dusty transition-colors duration-300 cursor-pointer group">
+              <span className="text-sm font-medium tracking-wide">Explore My Journey</span>
+              <div className="w-8 h-px bg-current transform group-hover:w-12 transition-all duration-300"></div>
+              <div className="w-0 h-0 border-l-2 border-l-current border-y-1 border-y-transparent transform group-hover:translate-x-1 transition-transform duration-300"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
