@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   Dialog,
@@ -67,20 +66,20 @@ We aim to launch by the end of 2025. The demo below showcases an early version o
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
-        <DialogHeader>
-          <DialogTitle className="text-2xl font-playfair text-charcoal">
+      <DialogContent className="max-w-2xl max-h-[70vh] overflow-y-auto bg-gradient-to-br from-porcelain to-dusty/10 border-dusty/20">
+        <DialogHeader className="pb-4 border-b border-dusty/20">
+          <DialogTitle className="text-xl font-playfair text-charcoal leading-tight">
             {project.title}
           </DialogTitle>
         </DialogHeader>
         
-        <div className="space-y-6">
+        <div className="space-y-4 py-2">
           {/* Tags */}
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <span 
                 key={tag}
-                className="px-3 py-1 text-sm bg-dusty/20 text-charcoal rounded-full font-medium"
+                className="px-2 py-1 text-xs bg-dusty/30 text-charcoal rounded-full font-medium"
               >
                 {tag}
               </span>
@@ -88,15 +87,15 @@ We aim to launch by the end of 2025. The demo below showcases an early version o
           </div>
 
           {/* Description */}
-          <DialogDescription className="text-lg leading-relaxed text-charcoal/80 whitespace-pre-line">
+          <DialogDescription className="text-sm leading-relaxed text-charcoal/90 whitespace-pre-line">
             {projectDetails.details}
           </DialogDescription>
 
           {/* Technologies */}
           {projectDetails.technologies && projectDetails.technologies.length > 0 && (
-            <div>
-              <h4 className="font-medium text-charcoal mb-3">Technologies Used</h4>
-              <div className="flex flex-wrap gap-2">
+            <div className="pt-2">
+              <h4 className="font-medium text-charcoal mb-2 text-sm">Technologies Used</h4>
+              <div className="flex flex-wrap gap-1.5">
                 {projectDetails.technologies.map((tech) => (
                   <span 
                     key={tech}
@@ -111,15 +110,15 @@ We aim to launch by the end of 2025. The demo below showcases an early version o
 
           {/* Project Link */}
           {projectDetails.link && (
-            <div className="pt-4 border-t border-charcoal/10">
+            <div className="pt-3 border-t border-dusty/20">
               <a 
                 href={projectDetails.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 text-dusty hover:text-charcoal transition-colors duration-300"
+                className="inline-flex items-center space-x-2 text-dusty hover:text-charcoal transition-colors duration-300 text-sm font-medium"
               >
-                <span className="font-medium">View Project</span>
-                <div className="w-4 h-px bg-current"></div>
+                <span>View Project</span>
+                <div className="w-3 h-px bg-current"></div>
                 <div className="w-0 h-0 border-l-2 border-l-current border-y-1 border-y-transparent"></div>
               </a>
             </div>

@@ -97,11 +97,13 @@ const GallerySection = () => {
 
                 <button 
                   onClick={() => handleExploreClick(project)}
-                  className="group inline-flex items-center space-x-2 text-charcoal hover:text-dusty transition-colors duration-300"
+                  className="group relative inline-flex items-center px-6 py-3 bg-dusty/20 hover:bg-dusty/40 text-charcoal font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105 border border-dusty/30 hover:border-dusty/60"
                 >
-                  <span className="font-medium">Explore piece</span>
-                  <div className="w-6 h-px bg-current transition-all duration-300 group-hover:w-8"></div>
-                  <div className="w-0 h-0 border-l-4 border-l-current border-y-2 border-y-transparent"></div>
+                  <span className="mr-3">Explore piece</span>
+                  <div className="flex items-center space-x-1">
+                    <div className="w-6 h-px bg-current transition-all duration-300 group-hover:w-8"></div>
+                    <div className="w-0 h-0 border-l-4 border-l-current border-y-2 border-y-transparent"></div>
+                  </div>
                 </button>
               </div>
             </div>
