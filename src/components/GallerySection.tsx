@@ -12,7 +12,7 @@ const GallerySection = () => {
       title: "Understanding Transformers through Implementation",
       description: "A visual exploration of transformer attention patterns, revealing the hidden pathways of machine understanding. This piece transforms mathematical abstractions into intuitive visual narratives.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
-      tags: ["research"]
+      tags: ["research oriented project"]
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const GallerySection = () => {
       title: "LLM for fewshot",
       description: "Documentation of unexpected intelligence arising from simple rules. This ongoing series examines the moments when systems transcend their original programming.",
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
-      tags: ["research"]
+      tags: ["research oriented project"]
     }
   ];
 
