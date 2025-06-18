@@ -15,8 +15,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="exhibition-title mb-8">
-            I turn complexity<br />
-            into clarity
+            Mehdi Ben Barka<br />
+            Portfolio's
           </h1>
           <p className="curator-note text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
             My work explores the interface between reasoning systems 
