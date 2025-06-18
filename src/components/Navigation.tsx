@@ -4,8 +4,6 @@ import React, { useState, useEffect } from 'react';
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('hero');
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [isDragging, setIsDragging] = useState(false);
-  const [dragOffset, setDragOffset] = useState({ x: 0, y: 0 });
 
   const navItems = [
     { id: 'hero', label: 'Introduction' },
@@ -45,39 +43,6 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleMouseDown = (e: React.MouseEvent) => {
-    setIsDragging(true);
-    setDragOffset({
-      x: e.clientX - position.x,
-      y: e.clientY - position.y
-    });
-  };
-
-  const handleMouseMove = (e: MouseEvent) => {
-    if (isDragging) {
-      setPosition({
-        x: e.clientX - dragOffset.x,
-        y: e.clientY - dragOffset.y
-      });
-    }
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
-
-  useEffect(() => {
-    if (isDragging) {
-      document.addEventListener('mousemove', handleMouseMove);
-      document.addEventListener('mouseup', handleMouseUp);
-    }
-
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseup', handleMouseUp);
-    };
-  }, [isDragging, dragOffset]);
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -90,17 +55,10 @@ const Navigation = () => {
       className="fixed z-50 select-none"
       style={{ 
         left: `${position.x}px`, 
-        top: `${position.y}px`,
-        cursor: isDragging ? 'grabbing' : 'grab'
+        top: `${position.y}px`
       }}
     >
-      <div 
-        className="bg-porcelain/90 backdrop-blur-sm border border-charcoal/10 rounded-full px-6 py-3 shadow-lg transition-all duration-300 hover:shadow-xl"
-        onMouseDown={handleMouseDown}
-      >
-        {/* Drag indicator */}
-        <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-8 h-1 bg-charcoal/20 rounded-full mb-2"></div>
-        
+      <div className="bg-porcelain/90 backdrop-blur-sm border border-charcoal/10 rounded-full px-6 py-3 shadow-lg transition-all duration-300 hover:shadow-xl">
         <ul className="flex space-x-6">
           {navItems.map((item) => (
             <li key={item.id}>
