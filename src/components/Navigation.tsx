@@ -40,15 +40,13 @@ const Navigation = () => {
     }
   };
 
+  // Only show navigation when NOT on hero section
+  if (activeSection === 'hero') {
+    return null;
+  }
+
   return (
-    <nav 
-      className={`fixed z-50 select-none transition-all duration-300 ${
-        activeSection === 'hero' 
-          ? 'left-1/2 transform -translate-x-1/2' // Centered horizontally
-          : 'left-8 top-8' // Top-left sur les autres sections
-      }`}
-      style={activeSection === 'hero' ? { top: 'calc(50vh + 240px)' } : {}}
-    >
+    <nav className="fixed z-50 select-none transition-all duration-300 left-8 top-8">
       <div className="bg-porcelain/90 backdrop-blur-sm border border-charcoal/10 rounded-full px-6 py-3 shadow-lg">
         <ul className="flex space-x-6">
           {navItems.map((item) => (

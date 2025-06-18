@@ -1,5 +1,5 @@
-
 import React from 'react';
+import HeroNavigation from './HeroNavigation';
 
 const HeroSection = () => {
   return (
@@ -42,6 +42,11 @@ const HeroSection = () => {
               />
               <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-charcoal/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
+          </div>
+          
+          {/* Hero Navigation - positioned after image, before description */}
+          <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+            <HeroNavigation />
           </div>
           
           {/* Enhanced description with staggered animation */}
