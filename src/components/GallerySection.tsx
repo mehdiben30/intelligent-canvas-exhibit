@@ -9,7 +9,7 @@ const GallerySection = () => {
     {
       id: 1,
       title: "Understanding Transformers through Implementation",
-      description: "A visual exploration of transformer attention patterns, revealing the hidden pathways of machine understanding. This piece transforms mathematical abstractions into intuitive visual narratives.",
+      description: "A Python implementation of a Transformer decoder model for generating Shakespearean-style dialogue",
       image: "/lovable-uploads/5d12bbc2-d716-4ce7-8948-032105f57a31.png",
       tags: ["research oriented project"]
     },
