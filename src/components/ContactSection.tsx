@@ -25,10 +25,10 @@ const ContactSection = () => {
             
             <div className="inline-block">
               <a 
-                href="mailto:hello@intelligentcanvas.ai" 
+                href="mailto:benbaraka.me@gmail.com" 
                 className="font-mono text-lg text-charcoal hover:text-dusty transition-colors duration-300 border-b border-charcoal/20 hover:border-dusty pb-1"
               >
-                hello@intelligentcanvas.ai
+                benbarka.me@gmail.com
               </a>
             </div>
           </div>
