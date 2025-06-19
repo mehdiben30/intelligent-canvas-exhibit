@@ -4,51 +4,39 @@ import React from 'react';
 const AboutMeSection = () => {
   return (
     <section className="min-h-screen flex items-center justify-center py-20 px-6 bg-gradient-to-b from-porcelain to-porcelain/80">
-      <div className="container mx-auto max-w-5xl">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Photo */}
-          <div className="relative">
-            <div className="aspect-[4/5] bg-gradient-to-br from-dusty/10 to-soft/10 rounded-lg overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face"
-                alt="Mehdi Ben Barka"
-                className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700"
-              />
-            </div>
-            {/* Floating elements */}
-            <div className="absolute -top-6 -right-6 w-12 h-12 bg-dusty/30 rounded-full animate-float"></div>
-            <div className="absolute -bottom-8 -left-8 w-16 h-16 bg-soft/20 rounded-full animate-float" style={{ animationDelay: '3s' }}></div>
+      <div className="container mx-auto max-w-4xl">
+        <div className="text-center">
+          {/* Header */}
+          <div className="mb-12">
+            <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-charcoal mb-6">
+              About Me
+            </h2>
+            <div className="w-20 h-px bg-dusty mx-auto mb-8"></div>
           </div>
 
           {/* Content */}
-          <div className="space-y-8">
-            <div>
-              <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-charcoal mb-6">
-                About Me
-              </h2>
-              <div className="w-20 h-px bg-dusty mb-8"></div>
-            </div>
+          <div className="space-y-8 max-w-3xl mx-auto">
+            <p className="curator-note text-lg leading-relaxed text-left">
+              I'm currently a research intern at Emobot, a startup specializing in emotion AI. We focus on analyzing and understanding human emotions through various outputs. In my role, I implement research papers and train/fine-tune advanced neural networks to enhance Emobot's technology in emotion recognition and sentiment analysis.
+            </p>
 
-            <div className="space-y-6">
-              <p className="curator-note text-lg leading-relaxed">
-                I am a Master's student in Machine Learning for Data Science at Université Paris Cité, 
-                where I explore the intersection of artificial intelligence and human understanding.
-              </p>
+            <p className="curator-note text-lg leading-relaxed text-left">
+              When I'm not working, I dedicate much of my time to diving deeper into advanced neural networks, particularly transformer architectures. It's something that excites me greatly, as I aspire to create innovative technologies—projects that haven't been done before and that can make a meaningful difference. And AI, in my view, is the way forward!
+            </p>
 
-              <p className="curator-note text-lg leading-relaxed">
-                Currently working as an AI Research Intern at Emobot, I focus on making complex 
-                neural systems interpretable and accessible. My passion lies in transforming 
-                mathematical abstractions into intuitive visual narratives.
-              </p>
-
-              <p className="curator-note text-lg leading-relaxed">
-                Each project represents a dialogue between curiosity and computation, 
-                designed to reveal the poetry hidden within algorithms.
+            <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border border-blue-100">
+              <p className="text-lg leading-relaxed text-left" style={{ 
+                fontFamily: 'Courier New, monospace',
+                color: '#1e3a8a',
+                textShadow: '0 0 10px rgba(59, 130, 246, 0.3)',
+                letterSpacing: '0.5px'
+              }}>
+                The first of these projects is IceBreaker, a personal initiative to which I dedicate a significant portion of my free time. It focuses on exploring innovative ways to implement large language models (LLMs) for specific objectives in party games. I'm working on making NPC personalities more engaging, personalizing experiences, and gathering interaction data to improve LLM context, ultimately enriching the entire user experience. My goal with IceBreaker is simple: to create a fun, interactive gameplay experience that brings people together.
               </p>
             </div>
 
             {/* Quick Facts */}
-            <div className="border-t border-charcoal/10 pt-8">
+            <div className="border-t border-charcoal/10 pt-8 mt-12">
               <div className="grid grid-cols-2 gap-6 text-sm">
                 <div className="space-y-1">
                   <div className="font-medium text-charcoal">Current Role</div>
