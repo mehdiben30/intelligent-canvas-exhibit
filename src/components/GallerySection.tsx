@@ -23,8 +23,8 @@ const GallerySection = () => {
     },
     {
       id: 3,
-      title: "LLM enables few-shot clustering",
-      description: 'Implementation of the 2023 research paper, "LLMs Enable Few-Shot Clustering" as part of my academic work at Paris Cité.',
+      title: "LLM for fewshot",
+      description: "Documentation of unexpected intelligence arising from simple rules. This ongoing series examines the moments when systems transcend their original programming.",
       image: "/lovable-uploads/b81dff5e-86c4-48f5-8a7a-ad94854a46fa.png",
       tags: ["research oriented project"]
     }
