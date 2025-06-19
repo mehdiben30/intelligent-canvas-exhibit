@@ -62,11 +62,15 @@ const GallerySection = () => {
             >
               {/* Image */}
               <div className={`${index % 2 === 1 ? 'md:col-start-2' : ''} group`}>
-                <div className="relative overflow-hidden rounded-lg shadow-lg transition-all duration-700 hover:shadow-2xl bg-porcelain">
+                <div className={`relative overflow-hidden rounded-lg shadow-lg transition-all duration-700 hover:shadow-2xl ${
+                  project.id === 3 ? 'bg-porcelain' : ''
+                }`}>
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-80 object-contain transition-transform duration-700 group-hover:scale-105"
+                    className={`w-full h-80 transition-transform duration-700 group-hover:scale-105 ${
+                      project.id === 3 ? 'object-contain' : 'object-cover'
+                    }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
