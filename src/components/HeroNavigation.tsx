@@ -4,8 +4,8 @@ import React from 'react';
 const HeroNavigation = () => {
   const navItems = [
     { id: 'hero', label: 'Introduction' },
-    { id: 'gallery', label: 'Works' },
     { id: 'about-me', label: 'About Me' },
+    { id: 'gallery', label: 'Works' },
     { id: 'about', label: 'Experience' },
     { id: 'contact', label: 'Connect' }
   ];

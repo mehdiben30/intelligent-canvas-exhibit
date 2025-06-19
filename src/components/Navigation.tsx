@@ -5,8 +5,8 @@ const Navigation = () => {
 
   const navItems = [
     { id: 'hero', label: 'Introduction' },
-    { id: 'gallery', label: 'Works' },
     { id: 'about-me', label: 'About Me' },
+    { id: 'gallery', label: 'Works' },
     { id: 'about', label: 'Experience' },
     { id: 'contact', label: 'Connect' }
   ];
@@ -50,11 +50,6 @@ const Navigation = () => {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
-
-  // Only show navigation when NOT on hero section
-  if (activeSection === 'hero') {
-    return null;
-  }
 
   return (
     <nav className="fixed z-50 select-none left-8 top-8">
