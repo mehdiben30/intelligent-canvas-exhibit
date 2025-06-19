@@ -22,18 +22,16 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-5xl mx-auto">
-          {/* Enhanced title animation */}
-          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          {/* Title with stable animation */}
+          <div className="animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
             <h1 className="font-playfair text-4xl md:text-6xl font-semibold text-charcoal leading-tight mb-12 relative">
-              <span className="inline-block animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                Mehdi Ben Barka
-              </span>
+              Mehdi Ben Barka
               <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-dusty to-soft rounded-full opacity-60"></div>
             </h1>
           </div>
           
-          {/* Enhanced Profile Image with hover effects */}
-          <div className="mb-12 flex justify-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          {/* Profile Image with stable hover effects */}
+          <div className="mb-12 flex justify-center animate-fade-in opacity-0" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-dusty to-soft rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
               <img 
@@ -45,13 +43,13 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Hero Navigation - positioned after image, before description */}
-          <div className="mb-8 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          {/* Hero Navigation */}
+          <div className="mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
             <HeroNavigation />
           </div>
           
-          {/* Simplified description without problematic animation */}
-          <div className="space-y-6">
+          {/* Description */}
+          <div className="space-y-6 animate-fade-in opacity-0" style={{ animationDelay: '1.0s', animationFillMode: 'forwards' }}>
             <p className="curator-note text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
               Master student @ ML for DataScience, U-Paris Citée
             </p>
@@ -60,8 +58,8 @@ const HeroSection = () => {
             </p>
           </div>
 
-          {/* Call to action with subtle animation */}
-          <div className="mt-16 animate-fade-in" style={{ animationDelay: '1.4s' }}>
+          {/* Call to action - centered */}
+          <div className="mt-16 animate-fade-in opacity-0 flex justify-center" style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}>
             <div className="inline-flex items-center space-x-3 text-dusty/70 hover:text-dusty transition-colors duration-300 cursor-pointer group">
               <span className="text-sm font-medium tracking-wide">Explore My Journey</span>
               <div className="w-8 h-px bg-current transform group-hover:w-12 transition-all duration-300"></div>
