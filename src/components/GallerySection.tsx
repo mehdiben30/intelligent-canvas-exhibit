@@ -10,7 +10,7 @@ const GallerySection = () => {
       id: 1,
       title: "Understanding Transformers through Implementation",
       description: "A Python implementation of a Transformer decoder model for generating Shakespearean-style dialogu",
-      image: "/lovable-uploads/5d12bbc2-d716-4ce7-8948-032105f57a31.png",
+      image: "/lovable-uploads/ebc861f3-16bc-4f14-ba00-57394ebf5d39.png",
       tags: ["research oriented project"]
     },
     {
