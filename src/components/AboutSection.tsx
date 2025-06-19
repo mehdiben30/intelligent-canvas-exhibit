@@ -5,74 +5,66 @@ const AboutSection = () => {
   return (
     <section className="min-h-screen py-20 px-6 bg-gradient-to-b from-porcelain to-porcelain/50">
       <div className="container mx-auto max-w-4xl">
-        <div className="grid md:grid-cols-5 gap-12 items-center">
-          {/* Photo */}
-          <div className="md:col-span-2">
-            <div className="relative">
-              <div className="aspect-[4/5] bg-gradient-to-br from-dusty/20 to-soft/20 rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=500&fit=crop&crop=face"
-                  alt="Portrait"
-                  className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-700"
-                />
+        <div className="text-center mb-16">
+          <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-charcoal mb-6">
+            Experience
+          </h2>
+          <div className="w-20 h-px bg-dusty mx-auto"></div>
+        </div>
+
+        <div className="space-y-12">
+          {/* Emobot Experience */}
+          <div className="border-l-2 border-dusty/30 pl-8 relative">
+            <div className="absolute -left-2 top-0 w-4 h-4 bg-dusty rounded-full"></div>
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-playfair text-2xl font-semibold text-charcoal">
+                  Emobot, Paris — Intern
+                </h3>
+                <p className="text-charcoal/70 font-medium">June 2025 - September 2025</p>
+                <p className="text-dusty font-medium mt-1">Research Paper Implementation & MLOps</p>
               </div>
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-dusty rounded-full opacity-60 animate-float"></div>
-              <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-soft rounded-full opacity-40 animate-float" style={{ animationDelay: '2s' }}></div>
+              <ul className="space-y-2 text-charcoal/80 leading-relaxed">
+                <li className="flex items-start">
+                  <span className="text-dusty mr-3 mt-1">●</span>
+                  Implementation of research papers.
+                </li>
+                <li className="flex items-start">
+                  <span className="text-dusty mr-3 mt-1">●</span>
+                  Fine-tuning and training of machine learning models.
+                </li>
+                <li className="flex items-start">
+                  <span className="text-dusty mr-3 mt-1">●</span>
+                  Support in the deployment and optimization of machine learning pipelines, focusing on MLOps practices to ensure model scalability and reliability.
+                </li>
+              </ul>
             </div>
           </div>
 
-          {/* Content */}
-          <div className="md:col-span-3 space-y-8">
-            <div>
-              <h2 className="font-playfair text-4xl md:text-5xl font-semibold text-charcoal mb-6">
-                About the Research
-              </h2>
-              <div className="w-20 h-px bg-dusty mb-8"></div>
-            </div>
-
-            <div className="space-y-6">
-              <p className="curator-note text-lg leading-relaxed">
-                I am fascinated by the moments when artificial systems surprise us—when they 
-                demonstrate understanding that seems to transcend their training, or when they 
-                fail in ways that illuminate the boundaries of machine intelligence.
-              </p>
-
-              <p className="curator-note text-lg leading-relaxed">
-                My research focuses on making these complex systems interpretable, not just 
-                to other researchers, but to anyone curious about how thinking might emerge 
-                from computation.
-              </p>
-
-              <p className="curator-note text-lg leading-relaxed">
-                Each project is an experiment in translation—converting the mathematical 
-                poetry of neural networks into visual languages that speak to human intuition.
-              </p>
-            </div>
-
-            {/* Artifacts */}
-            <div className="border-t border-charcoal/10 pt-8">
-              <h3 className="font-playfair text-xl font-semibold text-charcoal mb-4">
-                Current Artifacts
-              </h3>
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="space-y-1">
-                  <div className="font-medium text-charcoal">Tools</div>
-                  <div className="text-charcoal/70">PyTorch, JAX, D3.js</div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-medium text-charcoal">Focus</div>
-                  <div className="text-charcoal/70">Interpretability, Emergence</div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-medium text-charcoal">Location</div>
-                  <div className="text-charcoal/70">Research Lab</div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-medium text-charcoal">Status</div>
-                  <div className="text-charcoal/70">PhD Candidate</div>
-                </div>
+          {/* OCP Experience */}
+          <div className="border-l-2 border-dusty/30 pl-8 relative">
+            <div className="absolute -left-2 top-0 w-4 h-4 bg-soft rounded-full"></div>
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-playfair text-2xl font-semibold text-charcoal">
+                  OCP (Office Chérifien des Phosphates), Casablanca — Intern at the Data Management team
+                </h3>
+                <p className="text-charcoal/70 font-medium">April 2024 - July 2024</p>
               </div>
+              <ul className="space-y-2 text-charcoal/80 leading-relaxed">
+                <li className="flex items-start">
+                  <span className="text-dusty mr-3 mt-1">●</span>
+                  <strong>Implementation of a Data Pipeline:</strong> Designed and developed robust data pipelines to streamline data flow and processing.
+                </li>
+                <li className="flex items-start">
+                  <span className="text-dusty mr-3 mt-1">●</span>
+                  <strong>Development of an API:</strong> Created and integrated APIs to facilitate seamless data access and application interoperability.
+                </li>
+                <li className="flex items-start">
+                  <span className="text-dusty mr-3 mt-1">●</span>
+                  <strong>Case Study on Food Safety Data:</strong> Conducted comprehensive analyses involving exploratory data analysis, data cleaning, supervised learning, and unsupervised learning to derive actionable insights on food security data provided by FAO (Food and Agriculture Organization of the United Nations).
+                </li>
+              </ul>
             </div>
           </div>
         </div>

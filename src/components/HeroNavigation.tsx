@@ -6,7 +6,7 @@ const HeroNavigation = () => {
     { id: 'hero', label: 'Introduction' },
     { id: 'gallery', label: 'Works' },
     { id: 'about-me', label: 'About Me' },
-    { id: 'about', label: 'Research' },
+    { id: 'about', label: 'Experience' },
     { id: 'contact', label: 'Connect' }
   ];
 
@@ -37,11 +37,6 @@ const HeroNavigation = () => {
               </li>
             ))}
           </ul>
-        </div>
-
-        {/* Interactive hint text - centered */}
-        <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-charcoal/40 whitespace-nowrap">
-          Click to explore sections
         </div>
       </div>
     </nav>

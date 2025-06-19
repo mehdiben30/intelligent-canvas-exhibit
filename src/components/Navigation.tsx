@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 
 const Navigation = () => {
@@ -8,7 +7,7 @@ const Navigation = () => {
     { id: 'hero', label: 'Introduction' },
     { id: 'gallery', label: 'Works' },
     { id: 'about-me', label: 'About Me' },
-    { id: 'about', label: 'Research' },
+    { id: 'about', label: 'Experience' },
     { id: 'contact', label: 'Connect' }
   ];
 
