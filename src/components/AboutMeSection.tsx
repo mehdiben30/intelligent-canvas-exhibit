@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const AboutMeSection = () => {
@@ -28,8 +27,8 @@ const AboutMeSection = () => {
               The first of these projects is IceBreaker, a personal initiative to which I dedicate a significant portion of my free time. It focuses on exploring innovative ways to implement large language models (LLMs) for specific objectives in party games. I'm working on making NPC personalities more engaging, personalizing experiences, and gathering interaction data to improve LLM context, ultimately enriching the entire user experience. My goal with IceBreaker is simple: to create a fun, interactive gameplay experience that brings people together.
             </p>
           </div>
-           
-            
+        </div> {/* ← this was missing */}
+      </div>
     </section>
   );
 };
