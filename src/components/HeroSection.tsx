@@ -53,7 +53,7 @@ const HeroSection = () => {
           {/* Simplified description without problematic animation */}
           <div className="space-y-6">
             <p className="curator-note text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-              Master student @ ML for DataScience, U-Paris Citée
+              Master student @ ML for DataScience, U-Paris Cité
             </p>
             <p className="curator-note text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
               AI research Intern @ Emobot
