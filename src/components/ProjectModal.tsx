@@ -52,7 +52,7 @@ We aim to launch by the end of 2025. The demo below showcases an early version o
     details: `
       As part of my academic work at Paris Cité, I contributed to a group project based on the 2023 paper 'LLMs Enable Few-Shot Clustering,' which explores how large language models (LLMs) can enable clustering with minimal labeled data. The paper proposes using LLMs to generate semantic representations of data points for clustering, thereby reducing the need for extensive labeled datasets.
 
-      For this project, our team used a lighter model, GPT-4 nano, instead of the models used in the original paper, which employed GPT-3.5 Turbo. Due to Paris Cité's intellectual property policies, I am unable to publicly share the code or results, as they are considered proprietary to the institution. However, here’s a link to the research paper : </br>
+      For this project, our team used a lighter model, GPT-4 nano, instead of the models used in the original paper, which employed GPT-3.5 Turbo. Due to Paris Cité's intellectual property policies, I am unable to publicly share the code or results, as they are considered proprietary to the institution. However, here’s a link to the research paper: <br />
       <a href="https://arxiv.org/abs/2307.00524" target="_blank" rel="noopener noreferrer">LLMs Enable Few-Shot Clustering</a>
     `,
   };
