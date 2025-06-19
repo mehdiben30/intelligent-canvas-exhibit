@@ -24,8 +24,8 @@ const AboutMeSection = () => {
               When I'm not working, I dedicate much of my time to diving deeper into advanced neural networks, particularly transformer architectures. It's something that excites me greatly, as I aspire to create innovative technologies—projects that haven't been done before and that can make a meaningful difference. And AI, in my view, is the way forward!
             </p>
 
-            <p className="text-lg leading-relaxed text-left font-mono text-blue-300 bg-gradient-to-r from-blue-100 via-cyan-100 to-blue-50 bg-clip-text text-transparent border border-blue-200 rounded-lg p-4 shadow-sm">
-              The first of these projects is <span className="font-bold text-cyan-600">IceBreaker</span>, a personal initiative to which I dedicate a significant portion of my free time. It focuses on exploring innovative ways to implement large language models (LLMs) for specific objectives in party games. I'm working on making NPC personalities more engaging, personalizing experiences, and gathering interaction data to improve LLM context, ultimately enriching the entire user experience. My goal with IceBreaker is simple: to create a fun, interactive gameplay experience that brings people together.
+            <p className="curator-note text-lg leading-relaxed text-left">
+              The first of these projects is IceBreaker, a personal initiative to which I dedicate a significant portion of my free time. It focuses on exploring innovative ways to implement large language models (LLMs) for specific objectives in party games. I'm working on making NPC personalities more engaging, personalizing experiences, and gathering interaction data to improve LLM context, ultimately enriching the entire user experience. My goal with IceBreaker is simple: to create a fun, interactive gameplay experience that brings people together.
             </p>
 
             {/* Quick Facts */}
