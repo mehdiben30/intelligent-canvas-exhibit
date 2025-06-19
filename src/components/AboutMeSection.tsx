@@ -28,30 +28,8 @@ const AboutMeSection = () => {
               The first of these projects is IceBreaker, a personal initiative to which I dedicate a significant portion of my free time. It focuses on exploring innovative ways to implement large language models (LLMs) for specific objectives in party games. I'm working on making NPC personalities more engaging, personalizing experiences, and gathering interaction data to improve LLM context, ultimately enriching the entire user experience. My goal with IceBreaker is simple: to create a fun, interactive gameplay experience that brings people together.
             </p>
 
-            {/* Quick Facts */}
-            <div className="border-t border-charcoal/10 pt-8 mt-12">
-              <div className="grid grid-cols-2 gap-6 text-sm">
-                <div className="space-y-1">
-                  <div className="font-medium text-charcoal">Current Role</div>
-                  <div className="text-charcoal/70">AI Research Intern</div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-medium text-charcoal">Institution</div>
-                  <div className="text-charcoal/70">Université Paris Cité</div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-medium text-charcoal">Focus Area</div>
-                  <div className="text-charcoal/70">ML Interpretability</div>
-                </div>
-                <div className="space-y-1">
-                  <div className="font-medium text-charcoal">Research at</div>
-                  <div className="text-charcoal/70">Emobot</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+           
+            
     </section>
   );
 };
