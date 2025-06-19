@@ -47,8 +47,7 @@ const GallerySection = () => {
             Gallery of Works
           </h2>
           <p className="curator-note text-lg max-w-2xl mx-auto">
-            Each piece represents a dialogue between human curiosity and machine intelligence, 
-            curated to reveal the beauty within complexity.
+            
           </p>
         </div>
 
