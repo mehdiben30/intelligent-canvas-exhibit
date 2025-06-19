@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import ProjectModal from './ProjectModal';
 
@@ -24,7 +25,7 @@ const GallerySection = () => {
       id: 3,
       title: "LLM for fewshot",
       description: "Documentation of unexpected intelligence arising from simple rules. This ongoing series examines the moments when systems transcend their original programming.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
+      image: "/lovable-uploads/b81dff5e-86c4-48f5-8a7a-ad94854a46fa.png",
       tags: ["research oriented project"]
     }
   ];
