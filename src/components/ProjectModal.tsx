@@ -38,8 +38,7 @@ The result achieved comparable performance while reducing the number of training
 
 You can find the complete code in the GitHub repository as well as a concise report outlining the methodology, improvements, and results of the project.`,
           technologies: ["Python", "PyTorch", "Transformers"],
-          link: "https://github.com/example/attention-viz"
-        };
+          link: "https://github.com/mehdiben30/GPT-Implementation-
       case 2:
         return {
           details: `Driven by the belief that large language models can meaningfully enhance everyday experiences, I initiated this project to explore how AI could enrich social interactions — encouraging people to express themselves more openly, forge authentic connections, and share memorable, engaging moments.
