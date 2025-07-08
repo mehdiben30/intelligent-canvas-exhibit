@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   Dialog,
@@ -46,22 +45,15 @@ You can find the complete code in the GitHub repository as well as a concise rep
 
 The project is being developed in collaboration with a multidisciplinary team of four, including an engineer from CentraleSupélec, an AI scientist from ETH Zurich, and a designer.
 
-We aim to launch by the end of 2025.
+We aim to launch by the end of 2025.`,
           technologies: ["React", "Node.js", "AI/ML"],
           link: ""
         };
       case 3:
         return {
-          details: `
-            <p>
-              As part of my academic work at Paris Cité, I contributed to a group project based on the 2023 paper <i>'LLMs Enable Few-Shot Clustering'</i>, which explores how large language models (LLMs) can enable clustering with minimal labeled data. The paper proposes using LLMs to generate semantic representations of data points for clustering, thereby reducing the need for extensive labeled datasets.
-            </p>
-            <p>
-              For this project, our team used a lighter model, GPT-4 nano, instead of the models used in the original paper, which employed GPT-3.5 Turbo. Due to Paris Cité's intellectual property policies, I am unable to publicly share the code or results, as they are considered proprietary to the institution. However, here's a link to the research paper: 
-              <a href="https://arxiv.org/abs/2307.00524" target="_blank" rel="noopener noreferrer" class="text-dusty hover:text-charcoal transition-colors duration-300 underline">LLMs Enable Few-Shot Clustering</a>.
-            </p>
-          `,
-          isHtml: true,
+          details: `As part of my academic work at Paris Cité, I contributed to a group project based on the 2023 paper 'LLMs Enable Few-Shot Clustering', which explores how large language models (LLMs) can enable clustering with minimal labeled data. The paper proposes using LLMs to generate semantic representations of data points for clustering, thereby reducing the need for extensive labeled datasets.
+
+For this project, our team used a lighter model, GPT-4 nano, instead of the models used in the original paper, which employed GPT-3.5 Turbo. Due to Paris Cité's intellectual property policies, I am unable to publicly share the code or results, as they are considered proprietary to the institution.`,
           technologies: ["Python", "GPT-4", "Machine Learning"],
           link: "https://arxiv.org/abs/2307.00524"
         };
@@ -99,16 +91,9 @@ We aim to launch by the end of 2025.
           </div>
 
           {/* Description */}
-          {projectDetails.isHtml ? (
-            <div 
-              className="text-sm leading-relaxed text-charcoal/90 space-y-3"
-              dangerouslySetInnerHTML={{ __html: projectDetails.details }}
-            />
-          ) : (
-            <DialogDescription className="text-sm leading-relaxed text-charcoal/90 whitespace-pre-line">
-              {projectDetails.details}
-            </DialogDescription>
-          )}
+          <DialogDescription className="text-sm leading-relaxed text-charcoal/90 whitespace-pre-line">
+            {projectDetails.details}
+          </DialogDescription>
 
           {/* Technologies */}
           {projectDetails.technologies && projectDetails.technologies.length > 0 && (
