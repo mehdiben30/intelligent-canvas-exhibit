@@ -46,7 +46,7 @@ You can find the complete code in the GitHub repository as well as a concise rep
 
 The project is being developed in collaboration with a multidisciplinary team of four, including an engineer from CentraleSupélec, an AI scientist from ETH Zurich, and a designer.
 
-We aim to launch by the end of 2025. The demo below showcases an early version of our MVP — significantly evolved since, but offering a preview of the direction we're pursuing.`,
+We aim to launch by the end of 2025.
           technologies: ["React", "Node.js", "AI/ML"],
           link: ""
         };
